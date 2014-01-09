@@ -15,7 +15,7 @@ Implementing this Plugin:
 
 There is one file that you need to use, autostarter.js. Upload this file to your server, it can go anywhere on the server. Now, inside of your JW Player embed code, make sure that your plugins call points to the full path to the .js file on your server (http://www.yoursite.com/autostarter.js).
 
-Example:
+Example (stops autostarting after 5 times):
 
 <pre>
 &lt;div id=&quot;player&quot;&gt;&lt;/div&gt;
@@ -27,7 +27,7 @@ jwplayer('player').setup({
 &nbsp;&nbsp;'image': &quot;video.jpg&quot;,
 &nbsp;&nbsp;plugins: {
 	&nbsp;&nbsp;&nbsp;&nbsp;&quot;autostarter.js&quot;: {
-	'count':'5'
+	&nbsp;&nbsp;&nbsp;&nbsp;'count':'5'
 	&nbsp;&nbsp;}
 &nbsp;&nbsp;}
 });
